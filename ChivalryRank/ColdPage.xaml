@@ -1,0 +1,62 @@
+﻿<Window x:Class="ChivalryRank.ColdPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ColdPage" Height="480" Width="440" ResizeMode="NoResize" 
+        Closing="Window_Closing" Loaded="Window_Loaded" FontSize="25"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <StackPanel Name="idLog" Orientation="Horizontal" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock Text="Digite sua SteamID: " FontSize="15" VerticalAlignment="Center" Margin="5"/>
+            <TextBox Name="id" Text="12345678901234567" FontSize="15" Foreground="Gray" VerticalAlignment="Center" Margin="5, 0" Width="200" GotFocus="id_GotFocus"/>
+            <Button Content="Pesquisar" FontSize="15" Margin="5, 0" Click="Button_Click"/>
+        </StackPanel>
+        <Grid Name="playerStats" Margin="10, 2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Name="name" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="48"/>
+            <TextBlock Text="Rank: " Grid.Row="1" Grid.Column="0"/>
+            <TextBlock Name="rank" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock Text="Rank(%): " Grid.Row="2" Grid.Column="0"/>
+            <TextBlock Name="rankpercent" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock Text="Kills to next rank: " Grid.Row="3" Grid.Column="0"/>
+            <TextBlock Name="killsnext" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock Text="K/D Ratio: " Grid.Row="4" Grid.Column="0"/>
+            <TextBlock Name="kdr" Grid.Row="4" Grid.Column="1"/>
+            <TextBlock Text="Total Kills: " Grid.Row="5" Grid.Column="0"/>
+            <TextBlock Name="kills" Grid.Row="5" Grid.Column="1"/>
+            <TextBlock Text="Total Deaths: " Grid.Row="6" Grid.Column="0"/>
+            <TextBlock Name="deaths" Grid.Row="6" Grid.Column="1"/>
+            <TextBlock Text="Total Team Kills:" Grid.Row="7" Grid.Column="0"/>
+            <TextBlock Name="tks" Grid.Row="7" Grid.Column="1"/>
+            <TextBlock Text="Nemesis:" Grid.Row="8" Grid.Column="0"/>
+            <TextBlock Name="nemesisName" Grid.Row="8" Grid.Column="1"/>
+            <TextBlock Text="Greatest Victim: " Grid.Row="9" Grid.Column="0"/>
+            <TextBlock Name="grvictimName" Grid.Row="9" Grid.Column="1"/>
+            <TextBlock Text="Best Weapon: " Grid.Row="10" Grid.Column="0"/>
+            <TextBlock Name="bestwp" Grid.Row="10" Grid.Column="1"/>
+            <TextBlock Text="Nemesis Weapon: " Grid.Row="11" Grid.Column="0"/>
+            <TextBlock Name="nemesiswp" Grid.Row="11" Grid.Column="1"/>
+            <StackPanel Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Stats by:" Margin="15,0"/>
+                <Image Source="contents/coldlogo.png" Width="100" Margin="15,0" MouseDown="Image_MouseDown" Cursor="Hand"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

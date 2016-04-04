@@ -1,0 +1,21 @@
+﻿<Window x:Class="ChivalryRank.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help" Height="250" Width="300" Background="Black" Foreground="White" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20, 15">
+            <TextBlock Text="Instruções: " FontSize="25"/>
+            <Border BorderBrush="White" BorderThickness="2">
+                <StackPanel Margin="10, 0, 0, 0">
+                    <TextBlock Text="-Duplo click para atualizar"/>
+                    <TextBlock Text="-Aperte ESC para alterar o arquivo/ID" />
+                    <TextBlock Text="-Em caso de erros entre em contato!" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+            <TextBlock Text="Feito por: CHIPStyle"/>
+            <TextBlock Text="Bugs e reports entrar em contato pela Steam"/>
+            <Button Content="Clique aqui para visitar o perfil" Background="Transparent" Foreground="White" Click="Button_Click" Margin="10,5"/>
+            <Button Content="Clique aqui para resetar os registros" Background="Transparent" Foreground="White" Click="Button_Click_1" Margin="10,5" />
+        </StackPanel>
+    </Grid>
+</Window>

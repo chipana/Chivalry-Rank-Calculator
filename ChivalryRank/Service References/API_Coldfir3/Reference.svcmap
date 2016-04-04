@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8968420d-9ad0-42f0-93b4-0d47101beca0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://api.coldfir3.net/chivalry/PlayerDataWS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PlayerDataWS.wsdl" MetadataType="Wsdl" ID="c963a575-7312-4e41-bdec-911de72506c4" SourceId="1" SourceUrl="http://api.coldfir3.net/chivalry/PlayerDataWS.svc?wsdl" />
+    <MetadataFile FileName="PlayerDataWS.xsd" MetadataType="Schema" ID="e1fdf04e-4a0b-48a3-927e-f8009d6228c2" SourceId="1" SourceUrl="http://api.coldfir3.net/chivalry/PlayerDataWS.svc?xsd=xsd2" />
+    <MetadataFile FileName="PlayerDataWS1.xsd" MetadataType="Schema" ID="194d3642-da48-43f8-bab2-78d6eff8f0bc" SourceId="1" SourceUrl="http://api.coldfir3.net/chivalry/PlayerDataWS.svc?xsd=xsd1" />
+    <MetadataFile FileName="PlayerDataWS.disco" MetadataType="Disco" ID="94a953de-a709-4000-91b6-c230c8892b05" SourceId="1" SourceUrl="http://api.coldfir3.net/chivalry/PlayerDataWS.svc?disco" />
+    <MetadataFile FileName="PlayerDataWS2.xsd" MetadataType="Schema" ID="1f92abdf-78f5-48e4-8643-6a64113a8834" SourceId="1" SourceUrl="http://api.coldfir3.net/chivalry/PlayerDataWS.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
